@@ -17,28 +17,28 @@ const sidebar = () => {
                   `flex items-center gap-4 py-3 px-5 rounded-lg font-medium text-gray-700 transition-colors duration-200 shadow-sm hover:bg-blue-100 hover:text-blue-700 ${isActive ? 'bg-blue-50 text-blue-800 border-l-4 border-blue-600 shadow-md' : ''}`
                 } to={'/admin-dashboard'}>
                   <img src={assets.home_icon} alt='' className="w-6 h-6" />
-                  <p>Dashboard</p>
+                  <p className ='hidden md:block'>Dashboard</p>
                 </NavLink>
 
                 <NavLink className={({ isActive }) =>
                   `flex items-center gap-4 py-3 px-5 rounded-lg font-medium text-gray-700 transition-colors duration-200 shadow-sm hover:bg-blue-100 hover:text-blue-700 ${isActive ? 'bg-blue-50 text-blue-800 border-l-4 border-blue-600 shadow-md' : ''}`
                 } to={'/all-appointments'}>
                   <img src={assets.appointment_icon} alt='' className="w-6 h-6" />
-                  <p>Appointments</p>
+                  <p className ='hidden md:block'>Appointments</p>
                 </NavLink>
 
                 <NavLink className={({ isActive }) =>
                   `flex items-center gap-4 py-3 px-5 rounded-lg font-medium text-gray-700 transition-colors duration-200 shadow-sm hover:bg-blue-100 hover:text-blue-700 ${isActive ? 'bg-blue-50 text-blue-800 border-l-4 border-blue-600 shadow-md' : ''}`
                 } to={'/add-doctor'}>
                   <img src={assets.add_icon} alt='' className="w-6 h-6" />
-                  <p>Add Doctor</p>
+                  <p className ='hidden md:block'>Add Doctor</p>
                 </NavLink>
 
                 <NavLink className={({ isActive }) =>
                   `flex items-center gap-4 py-3 px-5 rounded-lg font-medium text-gray-700 transition-colors duration-200 shadow-sm hover:bg-blue-100 hover:text-blue-700 ${isActive ? 'bg-blue-50 text-blue-800 border-l-4 border-blue-600 shadow-md' : ''}`
                 } to={'/doctor-list'}>
                   <img src={assets.people_icon} alt='' className="w-6 h-6" />
-                  <p>Doctors List</p>
+                  <p className ='hidden md:block'>Doctors List</p>
                 </NavLink>
 
             </ul>
@@ -50,14 +50,14 @@ const sidebar = () => {
                   `flex items-center gap-4 py-3 px-5 rounded-lg font-medium text-gray-700 transition-colors duration-200 shadow-sm hover:bg-blue-100 hover:text-blue-700 ${isActive ? 'bg-blue-50 text-blue-800 border-l-4 border-blue-600 shadow-md' : ''}`
                 } to={'/doctor-dashboard'}>
                   <img src={assets.home_icon} alt='' className="w-6 h-6" />
-                  <p>Dashboard</p>
+                  <p className ='hidden md:block'>Dashboard</p>
                 </NavLink>
 
                 <NavLink className={({ isActive }) =>
                   `flex items-center gap-4 py-3 px-5 rounded-lg font-medium text-gray-700 transition-colors duration-200 shadow-sm hover:bg-blue-100 hover:text-blue-700 ${isActive ? 'bg-blue-50 text-blue-800 border-l-4 border-blue-600 shadow-md' : ''}`
                 } to={'/doctor-appointments'}>
                   <img src={assets.appointment_icon} alt='' className="w-6 h-6" />
-                  <p>Appointments</p>
+                  <p className ='hidden md:block'>Appointments</p>
                 </NavLink>
 
                 
@@ -66,7 +66,8 @@ const sidebar = () => {
                   `flex items-center gap-4 py-3 px-5 rounded-lg font-medium text-gray-700 transition-colors duration-200 shadow-sm hover:bg-blue-100 hover:text-blue-700 ${isActive ? 'bg-blue-50 text-blue-800 border-l-4 border-blue-600 shadow-md' : ''}`
                 } to={'/doctor-profile'}>
                   <img src={assets.people_icon} alt='' className="w-6 h-6" />
-                  <p>Profile</p>
+                  <p className ='hidden md:block' >Profile</p>
+                
                 </NavLink>
 
             </ul>
